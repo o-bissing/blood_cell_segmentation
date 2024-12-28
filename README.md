@@ -9,6 +9,16 @@ Possible approaches:
 Dataset for this project is “Blood Cell Segmentation Dataset” free available on [Kaggle](https://www.kaggle.com/datasets/jeetblahiri/bccd-dataset-with-mask). A total of 2656 images are available. 1328 Original blood cell images with 1328 corresponding ground truths.
 ![Example of a cell image and its corresponding ground truth](img/img_and_mask.jpg)
 
+## Tools I used
+
+To create a model that counts blood cells on an image I worked with following tools:
+
+- **cv2** library as a main computer vision tool
+- **keras** library for machine learning, including building a U-NET model
+- **sklearn** library for splitting data
+- **numpy** library for working with with arrays
+- **matplotlib.pyplot** library for plotting the data
+
 ## First approach: Watershed algorithm
 
 The algorithm visualizes an image as a topographic landscape, producing ‘catchment basins’ and ‘watershed ridge lines’ within the image to segregate different objects.

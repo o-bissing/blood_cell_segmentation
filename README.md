@@ -1,4 +1,4 @@
-# Introduction
+## Introduction
 
 The goal of this project is to use different computer vision techniques to segment the image, then count all the objects presented and after that to compare the results.
 Possible approaches:
@@ -9,7 +9,7 @@ Possible approaches:
 Dataset for this project is “Blood Cell Segmentation Dataset” free available on [Kaggle](https://www.kaggle.com/datasets/jeetblahiri/bccd-dataset-with-mask). A total of 2656 images are available. 1328 Original blood cell images with 1328 corresponding ground truths.
 ![Example of a cell image and its corresponding ground truth](img/img_and_mask.jpg)
 
-# First approach: Watershed algorithm
+## First approach: Watershed algorithm
 
 The algorithm visualizes an image as a topographic landscape, producing ‘catchment basins’ and ‘watershed ridge lines’ within the image to segregate different objects.
 In a simplified manner, any grayscale image can be viewed as a topographic surface where high intensity denotes peaks and hills while low intensity denotes valleys.
@@ -116,7 +116,7 @@ Objects number is: 60
 
 **Algorithm counted 60 cells which is a very high result – when counting per hand it is around 62**.
 
-# Second approach: U-NET model
+## Second approach: U-NET model
 
 The U-NET is convolutional network architecture for fast and precise segmentation of images. The main idea is to supplement a usual contracting network by successive layers, where pooling operations are replaced by upsampling operators. Hence these layers increase the resolution of the output. A successive convolutional layer can then learn to assemble a precise output based on this information.
 ![U-NET architecture example](img/U-NET.png)

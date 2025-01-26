@@ -13,6 +13,7 @@ Dataset for this project is “Blood Cell Segmentation Dataset” free available
 
 To create a model that counts blood cells on an image I worked with following tools:
 
+- **Python** as a main programming language
 - **cv2** library as a main computer vision tool
 - **keras** library for machine learning, including building a U-NET model
 - **sklearn** library for splitting data
